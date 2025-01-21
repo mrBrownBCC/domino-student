@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+    "build": "./gradlew html:dist && rm -rf html/build/dist/WEB-INF && node append-style.js  && mv html/build/dist/assets/assets.txt html/build/dist/assets/myAssets.txt && find html/build/dist/html -type f -exec sed -i 's/assets\\.txt/myAssets.txt/g' {} +",
+    "deploy": "gh-pages -d html/build/dist"
+  }
+}
