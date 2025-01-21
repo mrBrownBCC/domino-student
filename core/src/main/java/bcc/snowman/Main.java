@@ -171,9 +171,7 @@ public class Main extends ApplicationAdapter {
     }
 
     private void addAllDominos() {
-        for (float i = 0; i < 10; i++) {
-            addDomino(1 + i * .5f, .5f);
-        }
+        //add your code here!!
     }
 
     // note - creates from center
